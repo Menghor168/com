@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOME</title>
+  <link rel="stylesheet" href="../style/style.css" />
+
+</head>
+<body>
+    <header>
+    <div class="container header-bar">
+        <nav class="nav-left">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="course.html">Lesson Plan</a></li>
+            <li><a href="archive.html">Achieve</a></li>
+            <li><a href="commitment.html">Commit</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+        <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+            <h2>Welcome to my Lesson Plan</h2>
+            <p>Computer Teacher | Passionate about Tech & Education</p>
+            <a href="#plan" class="btn">Learn now</a>
+            </div>
+            <div class="hero-image">
+            <img src="../image/teacher.webp" alt="Hero Image">
+            </div>
+        </div>
+        </section>
+
+    <section id = plan> 
+    <section class="section light">
+    <div class="container">
+
+            <section class="section light">
+            <div class="container">
+
+                <!-- Typing Course -->
+                <h2>Typing Course</h2>
+                <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1Lg0i4rZEfLRXY7LWjcOKkI4FGavjFTtZ/preview" allow="autoplay"></iframe>
+                </div>
+                <a class="btn download-btn" href="https://drive.google.com/file/d/1AT8CWRd_8QTc7bCTlFxJ5Oygcnqw9HKP/view?usp=drive_link" target="_blank">Download PDF</a>
+
+                <h2>Microsoft Office ( Word, Excel , PowerPoint )</h2>
+                <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1nJIxwPLCms43YA00-lfkIJBkK5o9bOqN/preview" allow="autoplay"></iframe>
+                </div>
+                <a class="btn download-btn" href="https://drive.google.com/uc?export=download&id=2BxYzMnOPlQrSTUv" target="_blank">Download PDF</a>
+
+                <h2>Scratch Programming</h2>
+                <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1WVQ2G1n6lP18UvrPNLt3yqEMriDzLEOv/preview" allow="autoplay"></iframe>
+                </div>
+                <a class="btn download-btn" href="https://drive.google.com/uc?export=download&id=5EeMNopQRsTUVWXy" target="_blank">Download PDF</a>
+
+            </div>
+            </section>
+
+
+
+    </div>
+    </section>
+
+        <!-- Show PDF Script -->
+        <script>
+        function showPDF(url, viewerId) {
+            const viewer = document.getElementById(viewerId);
+            viewer.innerHTML = `<iframe src="${url}"></iframe>`;
+            viewer.style.display = 'block';
+            viewer.scrollIntoView({ behavior: 'smooth' });
+        }
+        </script>
+
+    <footer>
+        <div class="container">
+        <p>📍 #Street 2004 Trapang Lavea , Kakab , Posenchey , Phnom Penh </p>
+        </p>| 📞 095 40 40 60 |</p> 
+        </p>✉ khouenmenghor@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html> 

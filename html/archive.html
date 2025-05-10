@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archive</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-bar">
+      <nav class="nav-left">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="course.html">Lesson Plan</a></li>
+          <li><a href="archive.html">Achieve</a></li>
+          <li><a href="commitment.html">Commit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Welcome to my Achievement</h2>
+        <p>Computer Teacher | Passionate about Tech & Education</p>
+        <a href="#certificate" class="btn">See now</a>
+      </div>
+      <div class="hero-image">
+        <img src="../image/achieve.png" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATE SECTION -->
+  <section id="certificate" class="section light">
+    <div class="container">
+      <h2>Certificates</h2>
+      <div class="image-grid">
+        <img src="../image/setec1.jpg" alt="Certificate 1" onclick="openImage(this.src)">
+        <img src="../image/setec2.jpg" alt="Certificate 2" onclick="openImage(this.src)">
+        <img src="../image/english.jpg" alt="Certificate 3" onclick="openImage(this.src)">
+        <img src="../image/english1.jpg" alt="Certificate 4" onclick="openImage(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIC DESIGN SECTION -->
+  <section class="section dark">
+    <div class="container">
+      <h2>Graphic Design</h2>
+      <div class="image-grid">
+        <img src="../image/design1.jpg" alt="Design 1" onclick="openImage(this.src)">
+        <img src="../image/design4.jpg" alt="Design 4" onclick="openImage(this.src)">
+        <img src="../image/design3.jpg" alt="Design 3" onclick="openImage(this.src)">
+        <img src="../image/design2.jpg" alt="Design 2" onclick="openImage(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO / VIDEO EDITING SECTION -->
+  <section class="section light">
+    <div class="container">
+      <h2>Photo & Video Editing</h2>
+      <div class="image-grid">
+        <center>
+        <img src="../image/photo1.jpg" alt="Video Edit 1" onclick="openImage(this.src)">
+        <img src="../image/photo2.JPG" alt="Video Edit 2" onclick="openImage(this.src)">
+        </center>
+        <img src="../image/photo3.jpg" alt="Video Edit 3" onclick="openImage(this.src)">
+        <img src="../image/photo5.jpg" alt="Video Edit 5" onclick="openImage(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL IMAGE VIEWER -->
+  <div id="imageModal" class="modal" onclick="closeImage()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>📍 Street 2004 Trapang Lavea, Kakab, Posenchey, Phnom Penh</p>
+      <p>📞 095 40 40 60 | ✉ khouenmenghor@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function openImage(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = src;
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
